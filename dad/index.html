@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<title>蜘蛛英雄爸爸 ★ 生日補發版</title>
+<title>掃把英雄爸爸 ★ 生日補發版</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 <style>
@@ -98,7 +98,7 @@
     <button class="btn hidden" id="backCard">📩 回到信件</button>
 
     <div id="title" class="screen">
-      <div class="title bob" style="font-size:25px">蜘蛛英雄<br><span class="t2">爸爸出動！</span></div>
+      <div class="title bob" style="font-size:25px">掃把英雄<br><span class="t2">爸爸出動！</span></div>
       <div class="sub px">★ 8/10 BIRTHDAY ★</div>
       <div class="sub" style="margin-top:-8px;font-weight:900">（遲到的補發版）</div>
       <div class="panel">
@@ -159,7 +159,7 @@ const CONFIG = {
   ],
   sign: '—— 愛您的 兒子',
   quotes: {
-    open:    '蜘蛛英雄，出動！',
+    open:    '掃把英雄，出動！',
     sonOpen: '爸爸，樓梯好多蜘蛛…',
     catch:   ['看我的掃把！', '掃掉！', '小事一樁', '又一隻！', '這隻也太大了吧', '樓梯交給我！', '英雄出馬，一隻不留！'],
     gold:    '金蜘蛛！大獎！',
@@ -819,7 +819,7 @@ function blow() {
 function showCard() {
   S.mode = 'card'; hint.textContent = '';
   $('card').classList.remove('hidden');
-  $('cardStats').innerHTML = `今天蜘蛛英雄掃掉了 <b>${S.swept}</b> 隻蜘蛛，<br>新竹的樓梯又恢復和平了 ✨`;
+  $('cardStats').innerHTML = `今天掃把英雄掃掉了 <b>${S.swept}</b> 隻蜘蛛，<br>新竹的樓梯又恢復和平了 ✨`;
   const el = $('cardText');
   const html = CONFIG.message.map(l => l || '&nbsp;').join('<br>') + '<br><br><div style="text-align:right">' + CONFIG.sign + '</div>' + PHOTO_HTML;
   clearInterval(typing);
